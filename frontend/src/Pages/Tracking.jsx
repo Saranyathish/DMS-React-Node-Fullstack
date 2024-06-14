@@ -54,7 +54,7 @@ const [rowData, setRowData] = useState([
         <Nav />
         <div style={{paddingLeft: "50px"}}>
             <div style={{paddingTop: "20px"}}>
-                <h1>ISG Tracking</h1>
+                <h1>Dsat Tracking</h1>
                 <hr style={{ width: '87vw', border: '1px solid black' }} />
             </div>
             <div>

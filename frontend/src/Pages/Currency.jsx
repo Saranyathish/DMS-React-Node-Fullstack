@@ -63,7 +63,7 @@ const Currency = () => {
     };
 
     const getFetchData = async () => {
-        const response = await axios.get("http://localhost:5000/currency");
+        const response = await axios.get("https://localhost:44340/api/currency");
         if (response.data.success) {
             setTableData(response.data.data);
         }
@@ -75,7 +75,7 @@ const Currency = () => {
 
     const handleSubmit = async (e) => {
         e.preventDefault();
-        const response = await axios.post("http://localhost:5000/createcurrency", formData);
+        const response = await axios.post("https://localhost:44340/api/currency", formData);
         if (response.data.success) {
             alert(response.data.message);
             getFetchData();
